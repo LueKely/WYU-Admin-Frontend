@@ -1,4 +1,5 @@
 <script setup>
+	import { NavigationMenuLink } from 'radix-vue';
 	import { RouterLink, RouterView } from 'vue-router';
 </script>
 
