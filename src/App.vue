@@ -1,13 +1,15 @@
 <script setup>
-	import { NavigationMenuLink } from 'radix-vue';
+	import Navbar from './components/Navbar.vue';
 	import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
-	<nav>
+	<!-- <nav>
 		<RouterLink to="/">Dashboard</RouterLink>
-	</nav>
+	
+	</nav> -->
 
+	<Navbar />
 	<RouterView />
 </template>
 
