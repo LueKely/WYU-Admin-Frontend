@@ -14,8 +14,6 @@
 			<li><RouterLink to="/users">Users</RouterLink></li>
 			<li><RouterLink to="/posts">Posts</RouterLink></li>
 		</ul>
-
-		<button>Logout</button>
 	</nav>
 </template>
 
@@ -24,12 +22,13 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		column-gap: 10px;
 	}
 
 	nav {
 		border: 1px solid var(--clr-border);
 
-		padding-block: 10px;
+		padding: 10px;
 		border-radius: 5px;
 
 		display: flex;
@@ -37,7 +36,7 @@
 		justify-content: space-between;
 
 		width: 100%;
-
+		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
 		background-color: var(--clr-foreground);
 	}
 
@@ -60,6 +59,7 @@
 		font-size: var(--fs-xs);
 	}
 	a.router-link-active {
+		text-decoration: underline;
 	}
 	li {
 		width: 100%;

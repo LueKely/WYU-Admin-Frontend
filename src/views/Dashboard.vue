@@ -8,15 +8,15 @@
 	<DashboardLayout>
 		<!-- post component -->
 		<template v-slot:post>
-			<NumberDisplay title="No. of Posts" :value="0" />
+			<NumberDisplay title="No. of Posts" :value="102" :isUser="false" />
 		</template>
 		<!-- user component -->
 		<template v-slot:users>
-			<NumberDisplay title="No. of Users" :value="0" />
+			<NumberDisplay title="No. of Users" :value="245" :isUser="true" />
 		</template>
 		<!-- log component -->
 		<template v-slot:logs>
-			<!-- <LogsContainer /> -->
+			<LogsContainer />
 		</template>
 	</DashboardLayout>
 </template>

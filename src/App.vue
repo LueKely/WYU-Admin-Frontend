@@ -10,12 +10,13 @@
 <style scoped>
 	main {
 		display: flex;
-
+		padding: 10px;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
 		width: 100%;
 		height: 100dvh;
+		row-gap: 10px;
 	}
 
 	main:first-child {
