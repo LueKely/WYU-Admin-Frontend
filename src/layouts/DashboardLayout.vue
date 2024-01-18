@@ -1,6 +1,6 @@
 <template>
 	<!-- wrapper -->
-	<main>
+	<div class="wrapper">
 		<!-- no of posts and users -->
 		<h1>Dashboard</h1>
 		<div>
@@ -12,9 +12,14 @@
 			<h3>Logs</h3>
 			<slot name="logs">logs</slot>
 		</div>
-	</main>
+	</div>
 </template>
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+	.wrapper {
+		width: 100%;
+		height: 100%;
+	}
+</style>

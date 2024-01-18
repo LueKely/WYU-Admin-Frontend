@@ -16,7 +16,7 @@
 		</template>
 		<!-- log component -->
 		<template v-slot:logs>
-			<LogsContainer />
+			<!-- <LogsContainer /> -->
 		</template>
 	</DashboardLayout>
 </template>

@@ -1,16 +1,28 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
-	--clr-yellow: #ffb74d;
-	--clr-black-200: #000000;
-	--clr-black-100: #000000;
-	--clr-white-100: #f1f1f1;
+	--clr-yellow-200: #ffb74d;
+	--clr-yellow-100: #fdd79d;
+	--clr-black-200: #505050;
+	--clr-black-100: #353535;
+	--clr-white-100: #fafaf3;
+	--clr-white-200: #e0e0e0;
+
+	--fs-xs: clamp(0.75rem, 1.5vw, 1rem);
+	--fs-sm: clamp(0.8rem, 2vw, 1.5rem);
+	--fs-m: clamp(1rem, 2.5vw, 1.8rem);
+	--fs-l: clamp(1.5rem, 3vw, 2.5rem);
+	--fs-xl: clamp(2rem, 4vw, 3.5rem);
+	--fs-xxl: clamp(2.5rem, 5vw, 4.5rem);
 }
 
 /* semantic color variables for this project */
 :root {
-	--clr-accent: var(--clr-yellow);
+	--clr-accent: var(--clr-yellow-200);
+	--clr-accent-soft: var(--clr-yellow-100);
 	--clr-text: var(--clr-black-200);
 	--clr-text-soft: var(--clr-black-100);
+	--clr-foreground: var(--clr-white-100);
+	--clr-background: var(--clr-white-200);
 }
 
 *,
@@ -22,9 +34,11 @@
 }
 
 body {
-	min-height: 100dvh;
-	/* color: var(--color-text);
-  background: var(--color-background); */
+	background-color: var(--clr-white-100);
+	height: 100dvh;
+	width: 100dvw;
+	color: var(--clr-text);
+	background: var(--clr-background);
 	transition: color 0.5s, background-color 0.5s;
 	line-height: 1.6;
 	font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
