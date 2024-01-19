@@ -54,7 +54,7 @@
 
 	li > a {
 		font-weight: bold;
-		color: var(--clr-text-soft);
+		color: var(--clr-text);
 		text-decoration: none;
 		font-size: var(--fs-xs);
 	}
