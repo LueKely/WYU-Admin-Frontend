@@ -15,29 +15,33 @@
 				<td>Hamburger</td>
 				<td>Not Hamberger</td>
 				<td>Burg</td>
-				<td>VIEW</td>
+				<td>
+					<button class="view_btn">
+						<Icon color="" width="2rem" icon="ph:eye" /> View
+					</button>
+				</td>
 			</tr>
 		</table>
 	</div>
 </template>
 
-<script setup></script>
+<script setup>
+	import { Icon } from '@iconify/vue';
+</script>
 
 <style scoped>
 	.table-wrapper {
 		width: 100%;
-		/* height: 100%; */
+		height: 550px;
 		background-color: var(--clr-white-100);
 		padding-bottom: 20px;
 		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-
 		border-radius: 5px;
-		overflow: hidden;
+		overflow: scroll;
 	}
 
 	table {
 		border-collapse: collapse;
-		margin: 0;
 		width: 100%;
 	}
 
@@ -74,10 +78,30 @@
 	}
 
 	td:last-child {
-		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
-	tr:last-child {
-		border-bottom: none;
+	.view_btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 5px;
+
+		border: solid 1px var(--clr-accent);
+
+		background-color: var(--clr-foreground);
+		color: var(--clr-accent);
+		border-radius: 5px;
+		padding: 5px 10px;
+		font-size: var(--fs-xs);
+		cursor: pointer;
+	}
+
+	.view_btn:hover {
+		transition: background 150ms ease-in-out;
+		background-color: var(--clr-accent-soft);
+		color: var(--clr-white-100);
 	}
 </style>
