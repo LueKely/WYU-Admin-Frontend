@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Dashboard from '../views/Dashboard.vue';
+import PostsPage from '../views/PostsPage.vue';
+import UserPage from '../views/UsersPage.vue';
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,6 +10,16 @@ const router = createRouter({
 			path: '/',
 			name: 'Dashboard',
 			component: Dashboard,
+		},
+		{
+			path: '/users',
+			name: 'Users',
+			component: UserPage,
+		},
+		{
+			path: '/posts',
+			name: 'Posts',
+			component: PostsPage,
 		},
 		// {
 		//   path: '/about',
