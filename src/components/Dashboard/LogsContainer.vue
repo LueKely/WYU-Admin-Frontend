@@ -23,15 +23,16 @@
 <style scoped>
 	.wrapper {
 		padding-top: 10px;
+		padding-inline: 0px 20px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
 		width: 100%;
-		height: clamp(300px, 45dvh, 50dvh);
+		height: clamp(300px, 30dvw, 900px);
 		overflow-y: scroll;
 		row-gap: 10px;
-
+		scrollbar-gutter: stable;
 		scroll-behavior: smooth;
 	}
 </style>
