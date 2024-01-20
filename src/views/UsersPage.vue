@@ -6,6 +6,7 @@
 </template>
 
 <script setup>
+	import { RouterLink, RouterView } from 'vue-router';
 	import TablePageLayout from '@/layouts/TablePageLayout.vue';
 	import TableItemContainer from '@/components/Table/TableItemContainer.vue';
 </script>

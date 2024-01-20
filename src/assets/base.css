@@ -33,6 +33,9 @@
 	font-weight: normal;
 }
 
+dialog {
+	margin: auto;
+}
 body {
 	background-color: var(--clr-white-100);
 	height: 100dvh;

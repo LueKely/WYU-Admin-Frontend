@@ -10,7 +10,7 @@
 <style scoped>
 	main {
 		display: flex;
-		padding: 10px;
+		padding: 20px;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
