@@ -19,14 +19,14 @@ const router = createRouter({
 			component: UserPage,
 		},
 		{
-			path: '/posts',
+			path: '/recipes',
 			name: 'Posts',
 			component: PostsPage,
 		},
 		// di ko na ginawang child ng post user ids
 		{
-			path: '/posts/:id',
-			name: 'PostId',
+			path: '/recipes/:id',
+			name: 'RecipesId',
 			component: PostInfo,
 		},
 		{
@@ -34,15 +34,6 @@ const router = createRouter({
 			name: 'UserId',
 			component: UserInfo,
 		},
-
-		// {
-		//   path: '/about',
-		//   name: 'about',
-		//   // route level code-splitting
-		//   // this generates a separate chunk (About.[hash].js) for this route
-		//   // which is lazy-loaded when the route is visited.
-		//   component: () => import('../views/AboutView.vue')
-		// }
 	],
 });
 

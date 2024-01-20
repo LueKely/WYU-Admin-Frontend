@@ -1,14 +1,16 @@
 <template>
 	<TablePageLayout>
 		<template #header> <h1>Manage Users</h1> </template>
-		<template #table> <TableItemContainer></TableItemContainer> </template>
+		<template #table>
+			<UserTable></UserTable>
+		</template>
 	</TablePageLayout>
 </template>
 
 <script setup>
 	import { RouterLink, RouterView } from 'vue-router';
 	import TablePageLayout from '@/layouts/TablePageLayout.vue';
-	import TableItemContainer from '@/components/Table/TableItemContainer.vue';
+	import UserTable from '@/components/Table/UserTable.vue';
 </script>
 
 <style scoped>

@@ -5,14 +5,14 @@
 <template>
 	<nav>
 		<div class="wrapper">
-			<img src="" alt="Logo" />
+			<img src="/public/wyu-icon.svg" width="50" height="50" alt="Logo" />
 			<h1>WYU: Admin</h1>
 		</div>
 
 		<ul>
 			<li><RouterLink to="/">Dashboard</RouterLink></li>
 			<li><RouterLink to="/users">Users</RouterLink></li>
-			<li><RouterLink to="/posts">Posts</RouterLink></li>
+			<li><RouterLink to="/recipes">Posts</RouterLink></li>
 		</ul>
 	</nav>
 </template>

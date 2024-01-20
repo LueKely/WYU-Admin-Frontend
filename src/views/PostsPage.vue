@@ -1,12 +1,13 @@
 <template>
 	<TablePageLayout>
-		<template #header> <h1>Manage Posts</h1> </template>
-		<template #table> TEST </template>
+		<template #header> <h1>Manage Recipes</h1> </template>
+		<template #table><PostTable></PostTable> </template>
 	</TablePageLayout>
 </template>
 
 <script setup>
 	import TablePageLayout from '@/layouts/TablePageLayout.vue';
+	import PostTable from '@/components/Table/PostTable.vue';
 </script>
 
 <style scoped>

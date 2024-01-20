@@ -16,7 +16,7 @@
 				<td>Not Hamberger</td>
 				<td>Burg</td>
 				<td>
-					<button class="view_btn">
+					<button class="view_btn" @click="visitUser('test')">
 						<Icon color="" width="2rem" icon="ph:eye" /> View
 					</button>
 				</td>
@@ -26,6 +26,13 @@
 </template>
 
 <script setup>
+	import { useRouter } from 'vue-router';
+
+	const route = useRouter();
+	function visitUser(id) {
+		route.push({ name: 'UserId', params: { id: id } });
+	}
+
 	import { Icon } from '@iconify/vue';
 </script>
 
