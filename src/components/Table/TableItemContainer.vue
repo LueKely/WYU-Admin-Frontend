@@ -11,7 +11,7 @@
 			</tr>
 			<!-- data -->
 			<tr v-for="i in 10">
-				<td>Hamburger</td>
+				<td>Hamburger {{ i }}</td>
 				<td>Hamburger</td>
 				<td>Not Hamberger</td>
 				<td>Burg</td>
@@ -37,7 +37,7 @@
 		padding-bottom: 20px;
 		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
 		border-radius: 5px;
-		overflow: scroll;
+		overflow-y: scroll;
 	}
 
 	table {
@@ -46,6 +46,8 @@
 	}
 
 	tr:nth-child(1) {
+		position: sticky;
+		top: 0;
 		font-size: var(--fs-sm);
 		font-weight: bold;
 		text-align: left;
