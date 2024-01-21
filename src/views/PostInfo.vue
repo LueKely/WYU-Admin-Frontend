@@ -44,6 +44,7 @@
 	import { ref, reactive } from 'vue';
 	import { useRouter } from 'vue-router';
 
+	// just replace this with the data you get from the api3
 	const dummyData = reactive({
 		id: 1,
 		name: 'John Doe',

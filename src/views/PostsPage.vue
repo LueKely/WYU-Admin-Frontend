@@ -1,4 +1,6 @@
 <template>
+	<!-- layout page lang to, to get the logic go to the -->
+	<!-- Post table.vue -->
 	<TablePageLayout>
 		<template #header> <h1>Manage Recipes</h1> </template>
 		<template #table><PostTable></PostTable> </template>

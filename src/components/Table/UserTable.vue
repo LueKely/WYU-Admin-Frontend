@@ -27,13 +27,13 @@
 
 <script setup>
 	import { useRouter } from 'vue-router';
-
+	import { Icon } from '@iconify/vue';
+	// note: PostTable and UserTable are the same,
+	// i just got lazy and copy pasted the code :)
 	const route = useRouter();
 	function visitUser(id) {
 		route.push({ name: 'UserId', params: { id: id } });
 	}
-
-	import { Icon } from '@iconify/vue';
 </script>
 
 <style scoped>

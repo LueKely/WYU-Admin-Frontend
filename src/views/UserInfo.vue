@@ -31,6 +31,7 @@
 			</button>
 		</div>
 		<table class="user-container" cellpadding="5" cellspacing="0">
+			<!-- replace dummy data in the loop -->
 			<tr v-for="(value, key) in dummyData" :key="key">
 				<td>{{ key }}:</td>
 				<td>{{ value }}</td>
@@ -70,6 +71,7 @@
 		dialog.value.close();
 	}
 
+	// put async magic here
 	function deletePost() {
 		console.log('delete');
 	}

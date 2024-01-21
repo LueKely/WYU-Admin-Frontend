@@ -1,4 +1,6 @@
 <template>
+	<!-- layout page lang to, to get the logic go to the -->
+	<!-- user table.vue -->
 	<TablePageLayout>
 		<template #header> <h1>Manage Users</h1> </template>
 		<template #table>

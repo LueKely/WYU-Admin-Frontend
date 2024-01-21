@@ -8,7 +8,7 @@
 				<th>Date</th>
 				<th></th>
 			</tr>
-			<!-- data -->
+			<!-- data replace the 10 here and add the necessary aync magic -->
 			<tr v-for="i in 10">
 				<td>Hamburger {{ i }}</td>
 				<td>Hamburger</td>
@@ -24,11 +24,13 @@
 </template>
 
 <script setup>
+	// note: PostTable and UserTable are the same,
+	// i just got lazy and copy pasted the code :)
 	import { Icon } from '@iconify/vue';
-
 	import { useRouter } from 'vue-router';
 
 	const route = useRouter();
+
 	function visitUser(id) {
 		route.push({ name: 'RecipesId', params: { id: id } });
 	}
